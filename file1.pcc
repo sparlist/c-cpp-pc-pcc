@@ -1,0 +1,15 @@
+#include "common.h"
+
+void call_pcc_func(void)
+{
+    printf("Reached the PCC function\n");
+
+    // Now call a function in a C file
+    call_c_func();
+
+    // Call the function in a cpp file
+    call_cpp_func();
+
+    // Call the function a .pc file
+    call_pc_func();
+}

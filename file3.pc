@@ -1,0 +1,6 @@
+#include "common.h"
+
+void call_pc_func(void)
+{
+    printf("Reached the PC function\n");
+}
