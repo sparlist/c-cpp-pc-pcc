@@ -1,5 +1,8 @@
 #include "common.h"
 
+// Include some ORACLE stuff that requires the pre-compiler to modify
+EXEC SQL INCLUDE SQLCA;
+
 void call_pc_func(void)
 {
     printf("Reached the PC function\n");

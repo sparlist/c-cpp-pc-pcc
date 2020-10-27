@@ -9,7 +9,7 @@ test:
 	$(TARGET)
 
 %.o: %.pc
-	cat $< | gcc -c -o $@ -x c -
+	cat $< | grep -v "EXEC SQL" | gcc -c -o $@ -x c -
 
 %.o: %.pcc
-	cat $< | g++ -c -o $@ -x c++ -
+	cat $< | grep -v "EXEC SQL" | g++ -c -o $@ -x c++ -
